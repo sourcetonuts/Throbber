@@ -53,6 +53,7 @@ while True :
     if not wason and touch.value :
         # both was and is currently pressed, so toggle throbbing mode
         throbbing = not throbbing
+
         # wait until they release the button
         while touch.value :
             time.sleep(0.005)  # debounce 5ms delay
